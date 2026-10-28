@@ -1,0 +1,24 @@
+# Dependencias de paquetes
+node_modules/
+package-lock.json
+
+# Archivos de entorno y credenciales
+.env
+.env.local
+*.log
+
+# Archivos temporales de Office y del sistema
+~$*
+Thumbs.db
+.DS_Store
+
+# Salidas de compilación
+dist/
+build/
+coverage/
+
+# Scripts auxiliares temporales
+dump_docs.py
+setup_structure.py
+generate_docs.py
+F1 - Invetario Artefactos/
