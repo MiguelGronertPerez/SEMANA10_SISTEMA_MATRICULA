@@ -4,7 +4,7 @@
 **Universidad:** Universidad Católica Sedes Sapientiae (UCSS)  
 **Curso:** Ingeniería de Software 2 — Semana 10: Control de versiones y administración de artefactos  
 **Estudiante:** Miguel  
-**Fecha:** 28/10/2026  
+**Fecha:** 28/10/2026 (v1.1 - Cambio CH-001)  
 **Artefacto:** A-02 (tipo: Documento)  
 **Ruta en el repositorio:** `docs/02-requisitos-calidad.md`  
 
@@ -16,7 +16,7 @@ Los requisitos se organizan según las características del modelo de calidad **
 
 | ID | Característica | Requisito | Criterio de aceptación / métrica |
 | :--- | :--- | :--- | :--- |
-| **RC-01** | Rendimiento | El sistema debe atender la carga del primer día de matrícula sin degradarse. | 2 000 usuarios concurrentes; 95 % de las operaciones en ≤ 3 s; confirmación de matrícula en ≤ 5 s; consulta de oferta en ≤ 1.5 s. |
+| **RC-01** | Rendimiento | El sistema debe atender la carga del primer día de matrícula sin degradarse. | 2 000 usuarios concurrentes; 95 % de las operaciones en ≤ 3 s; confirmación de matrícula en ≤ 5 s; consulta de oferta en ≤ 1.5 s; percentil p99 ≤ 4 s bajo carga pico. |
 | **RC-02** | Seguridad | Solo usuarios autenticados acceden al sistema y cada rol ve únicamente lo que le corresponde. | Contraseñas con hash (bcrypt con sal); tokens JWT para sesiones; bloqueo tras 5 intentos fallidos consecutivos; control de acceso RBAC por endpoints. |
 | **RC-03** | Disponibilidad | El sistema debe estar operativo durante los periodos de matrícula académica. | Disponibilidad ≥ 99.5 % durante el periodo de matrícula; ventanas de mantenimiento programadas fuera del horario de matrícula. |
 | **RC-04** | Confiabilidad e integridad | Nunca debe asignarse más estudiantes que cupos disponibles, aun en matrículas simultáneas. | 0 sobrecupos en pruebas de concurrencia; transacciones atómicas (ACID) en la confirmación de asignación de vacantes. |

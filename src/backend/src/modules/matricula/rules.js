@@ -59,7 +59,11 @@ function validarMatricula({ estudiante, curso, seccion, seccionesMatriculadas, f
     errores.push({ codigo: 'CRUCE_HORARIO', mensaje: `Cruce de horario con: ${cruces.map((s) => s.codigo).join(', ')}.` });
   }
   if (superaCreditos(estudiante.creditos, curso.creditos, limiteCreditos)) {
-    errores.push({ codigo: 'LIMITE_CREDITOS', mensaje: `Se supera el límite de ${limiteCreditos} créditos.` });
+    const totalSolicitado = estudiante.creditos + curso.creditos;
+    errores.push({
+      codigo: 'LIMITE_CREDITOS',
+      mensaje: `Se supera el límite de ${limiteCreditos} créditos (intentó matricular ${totalSolicitado} créditos).`,
+    });
   }
 
   return { ok: errores.length === 0, errores };
