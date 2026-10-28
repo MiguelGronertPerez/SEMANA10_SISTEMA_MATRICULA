@@ -8,7 +8,7 @@
 ---
 
 ## Descripción del Proyecto
-Este repositorio contiene el control de versiones y la administración de artefactos del Sistema de Matrículas para la Universidad Católica Sedes Sapientiae. El proyecto abarca la definición del problema y alcance, requisitos de calidad (ISO/IEC 25010), diseño de arquitectura modular, casos de prueba y código fuente demostrativo con reglas de negocio validadas.
+Este repositorio contiene el control de versiones y la administración de artefactos del Sistema de Matrículas para la Universidad Católica Sedes Sapientiae. El proyecto abarca la definición del problema y alcance, requisitos de calidad (ISO/IEC 25010), diseño de arquitectura modular, casos de prueba y código fuente demostrativo con reglas de negocio.
 
 ---
 
