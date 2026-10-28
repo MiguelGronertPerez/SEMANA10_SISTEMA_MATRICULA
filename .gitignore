@@ -21,4 +21,5 @@ coverage/
 dump_docs.py
 setup_structure.py
 generate_docs.py
+generate_excel.py
 F1 - Invetario Artefactos/
