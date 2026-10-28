@@ -17,9 +17,5 @@ dist/
 build/
 coverage/
 
-# Scripts auxiliares temporales
-dump_docs.py
-setup_structure.py
-generate_docs.py
-generate_excel.py
+# Archivos originales de respaldo
 F1 - Invetario Artefactos/
